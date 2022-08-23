@@ -9,23 +9,22 @@
 	ubuntu Compilation conditions: vscode + gcc 9.3.0 + cmake
 	Modify the settings in data.cfg   
 
-	```
-	BCAC_dev = "enp0s31f6";
-	BCAC_out_pcap_file = "/home/cayman/data/pcap/20210501_3.pcap";
-	BCAC_dump_type = 2; //0 -- not dump, 1 -- only sample, 2 -- all
-	BCAC_max_packet = 5000000;
-	BCAC_capture_time = 900;
-	```
+	``
+        BCAC_in_pcap_file = "/home/cayman/data/pcap/202006031400.pcap.cut_type0_0-20_payload0.pcap"
+        BCAC_random_seed = 2022
+        ```
 
 (2)BCAC_capture: Used to analyze the captured data, running on linux systems due to the use of libpcap underlay.  
 	ubuntu Compilation conditions: vscode + gcc 9.3.0 + cmake
 	Modify the settings in data.cfg  
 
 	```
-	BCAC_in_pcap_file = "/home/cayman/data/pcap/202006031400.pcap.cut_type0_0-20_payload0.pcap";
-	BCAC_random_seed = 2022;
-	```
-
+        BCAC_dev = "enp0s31f6"
+        BCAC_out_pcap_file = "/home/cayman/data/pcap/20210501_3.pcap"
+        BCAC_dump_type = 2; //0 -- not dump, 1 -- only sample, 2 -- al
+        BCAC_max_packet = 5000000
+        BCAC_capture_time = 900
+        ```
 
 2、The data playback method used in the paper
 ![Image text](/images/system.png)  
